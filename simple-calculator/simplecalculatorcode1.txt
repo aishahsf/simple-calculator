@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <script>
+
+        function calculate1() {
+            var n1,n2,result;
+            n1 = Number(document.getElementById("n1").value);
+            n2 = Number(document.getElementById("n2").value);
+            sum = n1 + n2;
+            document.getElementById("result").value = sum; 
+        }  
+
+        function calculate2() {
+        var n3,n4,total;
+        n3 = Number(document.getElementById("n3").value);
+        n4 = Number(document.getElementById("n4").value);
+        sub = n3 - n4;
+        document.getElementById("total").value = sub; 
+        }
+
+        function calculate3() {
+        var n5,n6,jumlah;
+        n5 = Number(document.getElementById("n5").value);
+        n6 = Number(document.getElementById("n6").value);
+        multiply = n5 * n6;
+        document.getElementById("jumlah").value = multiply; 
+        }
+
+        function calculate4() {
+        var n7,n8,j;
+        n7 = Number(document.getElementById("n7").value);
+        n8 = Number(document.getElementById("n8").value);
+        divide = n7 / n8;
+        document.getElementById("j").value = divide; 
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+
+
+    <input type="text" id="n1"> + <input type="text" id="n2">
+    <button onclick="calculate1()">=</button>
+    <input type="text" id="result">
+
+    <br><br>
+    
+    <input type="text" id="n3"> - <input type="text" id="n4">
+    <button onclick="calculate2()">=</button>
+    <input type="text" id="total">
+
+    <br><br>
+    
+    <input type="text" id="n5"> x <input type="text" id="n6">
+    <button onclick="calculate3()">=</button>
+    <input type="text" id="jumlah">
+
+    <br><br>
+    
+    <input type="text" id="n7"> / <input type="text" id="n8">
+    <button onclick="calculate4()">=</button>
+    <input type="text" id="j">
+
+    
+</body>
+</html>
